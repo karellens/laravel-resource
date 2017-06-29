@@ -1,10 +1,10 @@
 <?php
 
-namespace Karellens\LAF;
+namespace Karellens\Resource;
 
 use Illuminate\Support\ServiceProvider;
 
-class LafServiceProvider extends ServiceProvider
+class ResourceServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -26,14 +26,14 @@ class LafServiceProvider extends ServiceProvider
     {
         include __DIR__.'/routes.php';
 
-        $this->app->singleton('Karellens\LAF\QueryMap', function ($app) {
-            return new \Karellens\LAF\QueryMap;
+        $this->app->singleton('Karellens\Resource\QueryMap', function ($app) {
+            return new \Karellens\Resource\QueryMap;
         });
-        $this->app->singleton('Karellens\LAF\Rules', function ($app) {
-            return new \Karellens\LAF\Rules;
+        $this->app->singleton('Karellens\Resource\Rules', function ($app) {
+            return new \Karellens\Resource\Rules;
         });
-        $this->app->singleton('Karellens\LAF\ApiResponse', function ($app) {
-            return new \Karellens\LAF\ApiResponse;
+        $this->app->singleton('Karellens\Resource\ApiResponse', function ($app) {
+            return new \Karellens\Resource\ApiResponse;
         });
     }
 }

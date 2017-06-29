@@ -2,13 +2,13 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Router;
-use Karellens\LAF\Facades\Rules;
+use Karellens\Resource\Facades\Rules;
 
 Route::pattern('id', '[0-9]+');
 
 /* map api routes */
 Route::group([
-    'middleware' => ['api', 'laf'],
+    'middleware' => ['api', 'resource'],
     'namespace' => 'App\Http\Controllers',
     'prefix' => 'api',
 ], function (Router $router) {
@@ -30,7 +30,7 @@ Route::group([
 
                 // assign Custom Controller or Default Controller
                 if(!$controller = Rules::getCustomController($version.'.'.$entity.'.'.$action)) {
-                    $controller = '\Karellens\LAF\Http\Controllers\ApiController';
+                    $controller = '\Karellens\Resource\Http\Controllers\ApiController';
                 }
 
                 // set route name

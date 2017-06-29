@@ -1,8 +1,8 @@
 <?php
 
-namespace Karellens\LAF;
+namespace Karellens\Resource;
 
-use Karellens\LAF\Facades\ReflectionModel as RM;
+use Karellens\Resource\Facades\ReflectionModel as RM;
 
 class QueryMap
 {

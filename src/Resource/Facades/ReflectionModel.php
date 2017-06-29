@@ -1,11 +1,11 @@
 <?php
 
-namespace Karellens\LAF\Facades;
+namespace Karellens\Resource\Facades;
 
 
 use Illuminate\Support\Facades\Facade;
 
-class Rules extends Facade
+class ReflectionModel extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -14,6 +14,6 @@ class Rules extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Karellens\LAF\Rules';
+        return 'Karellens\Resource\ReflectionModel';
     }
 }

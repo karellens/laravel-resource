@@ -1,13 +1,13 @@
 <?php
 
-namespace Karellens\LAF;
+namespace Karellens\Resource;
 use Illuminate\Support\Facades\Cache;
 
 /**
  * Helper for Eloquent Model reverse engineering
  *
  * Class ReflectionModel
- * @package Karellens\LAF
+ * @package Karellens\Resource
  */
 class ReflectionModel
 {

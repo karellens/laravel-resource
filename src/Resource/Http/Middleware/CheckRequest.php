@@ -1,9 +1,9 @@
 <?php
 
-namespace Karellens\LAF\Http\Middleware;
+namespace Karellens\Resource\Http\Middleware;
 
 use Closure;
-use Karellens\LAF\ApiResponse;
+use Karellens\Resource\ApiResponse;
 
 class CheckRequest
 {

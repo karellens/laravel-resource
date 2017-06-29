@@ -1,6 +1,6 @@
 <?php
 
-namespace Karellens\LAF;
+namespace Karellens\Resource;
 
 use Illuminate\Http\Response;
 

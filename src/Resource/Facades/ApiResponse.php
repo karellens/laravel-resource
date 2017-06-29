@@ -1,11 +1,11 @@
 <?php
 
-namespace Karellens\LAF\Facades;
+namespace Karellens\Resource\Facades;
 
 
 use Illuminate\Support\Facades\Facade;
 
-class QueryMap extends Facade
+class ApiResponse extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -14,6 +14,6 @@ class QueryMap extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Karellens\LAF\QueryMap';
+        return 'Karellens\Resource\ApiResponse';
     }
 }

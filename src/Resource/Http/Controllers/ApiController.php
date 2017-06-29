@@ -1,14 +1,14 @@
 <?php
 
-namespace Karellens\LAF\Http\Controllers;
+namespace Karellens\Resource\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Route;
-use Karellens\LAF\Facades\ApiResponse;
-use Karellens\LAF\Facades\QueryMap;
-use Karellens\LAF\Facades\ReflectionModel;
+use Karellens\Resource\Facades\ApiResponse;
+use Karellens\Resource\Facades\QueryMap;
+use Karellens\Resource\Facades\ReflectionModel;
 
 class ApiController extends Controller
 {

@@ -1,7 +1,7 @@
 {
-    "name": "karellens/laravel-api-framework",
+    "name": "karellens/laravel-resource",
     "description": "",
-    "homepage": "https://github.com/karellens/laravel-api-framework",
+    "homepage": "https://github.com/karellens/laravel-resource",
     "keywords": [],
     "license": "MIT",
     "authors": [
@@ -11,22 +11,23 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/karellens/laravel-api-framework/issues"
+        "issues": "https://github.com/karellens/laravel-resource/issues"
     },
     "require": {
         "php": ">=5.6.4",
-        "illuminate/support": "5.3.*"
+        "illuminate/support": "5.2.* | 5.3.* | 5.4.*",
+        "illuminate/database": "5.2.* | 5.3.* | 5.4.*"
     },
     "require-dev": {
         "mockery/mockery": "0.9.*"
     },
     "autoload": {
         "classmap": [
-            "src/LaravelApiFramework/Http/Controllers"
+            "src/Resource/Http/Controllers"
         ],
         "psr-4": {
             "App\\": "app/",
-            "Karellens\\LAF\\": "src/LaravelApiFramework/"
+            "Karellens\\Resource\\": "src/Resource/"
         }
     },
     "minimum-stability": "dev"

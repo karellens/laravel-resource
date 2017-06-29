@@ -1,5 +1,5 @@
 <?php
-namespace Karellens\LAF;
+namespace Karellens\Resource;
 
 
 class Rules
